@@ -1,0 +1,139 @@
+/* ─────────────────────────────────────────────────────────────
+   Online E-commerce Platform — Custom Design Tokens & Utilities
+   Font: Inter, Sans-serif
+   Palette: White, Gray-100 (#f8f9fa), Gray-900 (#212529),
+            Muted (#6c757d), Primary Blue (#0d6efd)
+   ───────────────────────────────────────────────────────────── */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* User avatar circle */
+.avatar-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* Dashboard left sidebar */
+.dashboard-layout {
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 58px - 53px);
+}
+
+.dashboard-sidebar {
+    width: 240px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e9ecef;
+    flex-shrink: 0;
+}
+
+.dashboard-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.sidebar-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    color: #495057;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-nav-link:hover {
+    color: #0d6efd;
+    background-color: #e9ecef;
+}
+
+.sidebar-nav-link.active {
+    color: #0d6efd;
+    background-color: #e7f1ff;
+    font-weight: 600;
+}
+
+/* Dashboard cards with subtle 0.15s hover lift */
+.dashboard-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.icon-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* Form input group styling */
+.form-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.input-group-text {
+    border-color: #dee2e6;
+}
+
+.form-control, .form-select {
+    border-color: #dee2e6;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Buttons border-radius 6-8px */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.85rem;
+}

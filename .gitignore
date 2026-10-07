@@ -1,0 +1,24 @@
+# Build output
+target/
+
+# IDE — IntelliJ
+.idea/
+*.iml
+
+# IDE — Eclipse
+.classpath
+.project
+.settings/
+
+# IDE — VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config (may contain real credentials)
+application-local.properties
+
+# Logs
+*.log
